@@ -57,6 +57,7 @@
         <ul>
           <li><a href="#work" data-nav-link>Work</a></li>
           <li><a href="#experience" data-nav-link>Experience</a></li>
+          <li><a href="#organization" data-nav-link>Organization</a></li>
           <li><a href="#skills" data-nav-link>Skills</a></li>
           <li><a href="#certifications" data-nav-link>Certifications</a></li>
           <li><a href="#contact" data-nav-link>Contact</a></li>
@@ -83,12 +84,13 @@
         <p class="eyebrow">Informatics Engineering · Politeknik Negeri Malang</p>
         <h1>Rachmad<br>Febriananda</h1>
         <p class="hero__lede">
-          I study applied computer science in Malang. Most of my work sits where data meets
-          product — firmware that reads sensors, models that make sense of messy data, and the
-          web applications that put both in front of real people.
+          I'm a computer science student at Politeknik Negeri Malang, working across data science
+          pipelines, backend engineering, and machine learning. Lately that has meant a seven-table
+          PostgreSQL schema behind a live check-in platform, and a water quality model that predicts
+          in real time. I like work that stays useful after the notebook closes.
         </p>
         <ul class="hero__links">
-          <li><a href="mailto:febriananda.rachmad@gmail.com">Email</a></li>
+          <li><a href="mailto:febrianandarachmad@gmail.com">Email</a></li>
           <li><a href="https://github.com/rachmadnanda" target="_blank" rel="noopener">GitHub</a></li>
           <li><a href="https://www.linkedin.com/in/rachmadfebriananda/" target="_blank" rel="noopener">LinkedIn</a></li>
         </ul>
@@ -101,7 +103,7 @@
         </div>
         <div>
           <dt>Studying</dt>
-          <dd>D4 Computer Science, class of 2028</dd>
+          <dd>Bachelor of Applied Science, class of 2028</dd>
         </div>
         <div>
           <dt>Focus</dt>
@@ -119,12 +121,48 @@
     <div class="wrap">
       <div class="section-head reveal">
         <h2 class="section-title"><span class="section-index">01</span> Selected Work</h2>
-        <p class="section-note">Five projects, in the order I would talk about them.</p>
+        <p class="section-note">Five projects, in the order I would walk you through them.</p>
       </div>
 
       <div class="work-list">
         <article class="work reveal">
           <p class="work__index">01</p>
+          <div class="work__body">
+            <h3 class="work__title">Evently — guest and QR check-in</h3>
+            <p class="work__desc">
+              A guest and check-in platform for events. Seven-table PostgreSQL schema with migrations,
+              ENUM types, indexes and an ERD, plus end-to-end check-in using unique tokens, real-time
+              validation, duplicate-scan prevention and audit logging. I also built the three-tier RBAC,
+              the event approval workflow, CRUD for guests, events, templates and scanners,
+              Excel/CSV/PDF reporting, a live attendance dashboard, and a Node.js service for bulk
+              WhatsApp messages.
+            </p>
+            <ul class="tags">
+              <li>PostgreSQL</li><li>Node.js</li><li>RBAC</li><li>QR check-in</li>
+            </ul>
+          </div>
+          <p class="work__meta"><span>Backend · Platform</span><span>2026</span></p>
+        </article>
+
+        <article class="work reveal">
+          <p class="work__index">02</p>
+          <div class="work__body">
+            <h3 class="work__title">Aqua Monitoring — estuary water quality</h3>
+            <p class="work__desc">
+              A water quality prediction app for Coding Camp 2026, built with a full-stack and AI team.
+              I handled the data end to end: collection, assessment, cleaning, imputation, and exploratory
+              analysis. Then feature engineering, training and comparing prediction models for quality
+              classification, and an interactive Streamlit dashboard to present the results.
+            </p>
+            <ul class="tags">
+              <li>Python</li><li>Pandas</li><li>scikit-learn</li><li>Streamlit</li>
+            </ul>
+          </div>
+          <p class="work__meta"><span>Data Science · Team</span><span>2026</span></p>
+        </article>
+
+        <article class="work reveal">
+          <p class="work__index">03</p>
           <div class="work__body">
             <h3 class="work__title">
               <a href="https://github.com/rachmadnanda/StudyCaseStage2" target="_blank" rel="noopener">
@@ -135,11 +173,11 @@
               </a>
             </h3>
             <p class="work__desc">
-              A carbon monoxide detector for private car cabins, built so exposure is caught before
-              it turns dangerous. The ESP32 reads an MQ-2 and a DHT22, smooths the signal with a
-              moving average, and applies hysteresis to the alarm thresholds before driving an OLED
-              and a buzzer. Readings publish over MQTT and land in a live Python dashboard. Ten test
-              scenarios and sixty assertions ship with it.
+              A carbon monoxide detector for private car cabins, built so exposure is caught before it
+              turns dangerous. The ESP32 reads an MQ-2 and a DHT22, smooths the signal with a moving
+              average, and applies hysteresis to the alarm thresholds before driving an OLED and a
+              buzzer. Readings publish over MQTT and land in a live Python dashboard. Ten test scenarios
+              and sixty assertions ship with it.
             </p>
             <ul class="tags">
               <li>ESP32</li><li>MQ-2</li><li>MQTT</li><li>Python</li><li>Plotly</li>
@@ -149,7 +187,30 @@
         </article>
 
         <article class="work reveal">
-          <p class="work__index">02</p>
+          <p class="work__index">04</p>
+          <div class="work__body">
+            <h3 class="work__title">
+              <a href="https://github.com/rachmadnanda/GulaSkin" target="_blank" rel="noopener">
+                GulaSkin — daily sugar tracker
+                <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M4 10 10 4M10 4H5M10 4v5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </h3>
+            <p class="work__desc">
+              A sugar intake tracker that shows what a day of eating adds up to, and what that means for
+              your skin. React and TypeScript on the front end, Gemini for the analysis, containerised
+              with Docker.
+            </p>
+            <ul class="tags">
+              <li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>Gemini API</li>
+            </ul>
+          </div>
+          <p class="work__meta"><span>Web app · Personal</span><span>2026</span></p>
+        </article>
+
+        <article class="work reveal">
+          <p class="work__index">05</p>
           <div class="work__body">
             <h3 class="work__title">
               <a href="https://github.com/rachmadnanda/PBL_INLET_WebProfile" target="_blank" rel="noopener">
@@ -161,8 +222,8 @@
             </h3>
             <p class="work__desc">
               The public profile and content system for the Information and Learning Engineering
-              Technology lab at Polinema, built by a team of four in our third-semester PBL. Native
-              PHP with an MVC structure over PostgreSQL: guestbook, lab loan and visitation records,
+              Technology lab at Polinema, built by a team of four in our third-semester PBL. Native PHP
+              with an MVC structure over PostgreSQL: guestbook, lab loan and visitation records,
               publication and product counts, student attendance, news, and an admin CMS. I owned the
               backend and database — most of it the admin panel — plus the CMS front end in Tailwind,
               and ran QA before handoff.
@@ -172,66 +233,6 @@
             </ul>
           </div>
           <p class="work__meta"><span>Full-stack · PBL</span><span>2025</span></p>
-        </article>
-
-        <article class="work reveal">
-          <p class="work__index">03</p>
-          <div class="work__body">
-            <h3 class="work__title">Aqua Monitoring — estuary water quality</h3>
-            <p class="work__desc">
-              A water quality prediction app for Coding Camp 2026, built with a full-stack and AI
-              team. I handled the data end to end: collection, assessment, cleaning, imputation, and
-              exploratory analysis. Then feature engineering, training and comparing prediction
-              models for quality classification, and an interactive Streamlit dashboard to present
-              the results.
-            </p>
-            <ul class="tags">
-              <li>Python</li><li>Pandas</li><li>scikit-learn</li><li>Streamlit</li>
-            </ul>
-          </div>
-          <p class="work__meta"><span>Data Science · Team</span><span>2026</span></p>
-        </article>
-
-        <article class="work reveal">
-          <p class="work__index">04</p>
-          <div class="work__body">
-            <h3 class="work__title">Evently — guest and QR check-in</h3>
-            <p class="work__desc">
-              A guest and check-in platform for events. Seven-table PostgreSQL schema with
-              migrations, ENUM types, indexes and an ERD, plus end-to-end check-in using unique
-              tokens, real-time validation, duplicate-scan prevention and audit logging. I also
-              built the three-tier RBAC, the event approval workflow, CRUD for guests, events,
-              templates and scanners, Excel/CSV/PDF reporting, a live attendance dashboard, and a
-              Node.js service for bulk WhatsApp messages.
-            </p>
-            <ul class="tags">
-              <li>PostgreSQL</li><li>Node.js</li><li>RBAC</li><li>QR check-in</li>
-            </ul>
-          </div>
-          <p class="work__meta"><span>Backend · Platform</span><span>2026</span></p>
-        </article>
-
-        <article class="work reveal">
-          <p class="work__index">05</p>
-          <div class="work__body">
-            <h3 class="work__title">
-              <a href="https://github.com/rachmadnanda/GulaSkin" target="_blank" rel="noopener">
-                GulaSkin — daily sugar tracker
-                <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                  <path d="M4 10 10 4M10 4H5M10 4v5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-            </h3>
-            <p class="work__desc">
-              A sugar intake tracker that shows what a day of eating adds up to, and what that means
-              for your skin. React and TypeScript on the front end, Gemini for the analysis,
-              containerised with Docker.
-            </p>
-            <ul class="tags">
-              <li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>Gemini API</li>
-            </ul>
-          </div>
-          <p class="work__meta"><span>Web app · Personal</span><span>2026</span></p>
         </article>
       </div>
     </div>
@@ -270,20 +271,30 @@
             </ul>
           </div>
         </li>
+      </ol>
 
-        <li class="entry reveal">
-          <p class="entry__when">Mar 2026 — Jun 2026</p>
-          <div class="entry__body">
-            <h3 class="entry__role">Backend Developer</h3>
-            <p class="entry__org">Evently — Event Guest &amp; QR Check-In Platform</p>
-            <ul class="entry__points">
-              <li>Designed the PostgreSQL schema and the check-in flow: unique tokens, real-time validation, duplicate-scan prevention, audit logging.</li>
-              <li>Implemented three-tier RBAC, the event approval workflow, and CRUD for guests, events, templates and scanners.</li>
-              <li>Built Excel/CSV/PDF reporting, a live attendance dashboard, and a Node.js microservice for bulk WhatsApp messages.</li>
-            </ul>
+      <div class="education reveal">
+        <h3 class="subhead">Education</h3>
+        <div class="edu">
+          <p class="entry__when">Aug 2024 — May 2028<br>(expected)</p>
+          <div>
+            <h4 class="entry__role">Bachelor of Applied Science in Computer Science</h4>
+            <p class="entry__org">State Polytechnic of Malang — Malang, East Java</p>
+            <p class="edu__gpa">GPA <span>3.70</span> / 4.00</p>
           </div>
-        </li>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="section" id="organization">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="section-title"><span class="section-index">03</span> Organizational Experience</h2>
+        <p class="section-note">Where I show up outside coursework.</p>
+      </div>
+
+      <ol class="timeline">
         <li class="entry reveal">
           <p class="entry__when">Oct 2026 — Present</p>
           <div class="entry__body">
@@ -296,25 +307,13 @@
           </div>
         </li>
       </ol>
-
-      <div class="education reveal">
-        <h3 class="subhead">Education</h3>
-        <div class="edu">
-          <p class="entry__when">Aug 2024 — May 2028</p>
-          <div>
-            <h4 class="entry__role">D4 Applied Computer Science</h4>
-            <p class="entry__org">State Polytechnic of Malang — Malang, East Java</p>
-            <p class="edu__gpa">GPA <span>3.70</span> / 4.00</p>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
   <section class="section" id="skills">
     <div class="wrap">
       <div class="section-head reveal">
-        <h2 class="section-title"><span class="section-index">03</span> Skills</h2>
+        <h2 class="section-title"><span class="section-index">04</span> Skills</h2>
         <p class="section-note">What I reach for, grouped by where it sits in a project.</p>
       </div>
 
@@ -366,7 +365,7 @@
   <section class="section" id="certifications">
     <div class="wrap">
       <div class="section-head reveal">
-        <h2 class="section-title"><span class="section-index">04</span> Certifications</h2>
+        <h2 class="section-title"><span class="section-index">05</span> Certifications</h2>
         <p class="section-note">47 courses across nine issuers. Grouped, not scattered — open a row for the full list.</p>
       </div>
 
@@ -541,11 +540,11 @@
   <section class="section section--contact" id="contact">
     <div class="wrap">
       <div class="section-head reveal">
-        <h2 class="section-title"><span class="section-index">05</span> Contact</h2>
+        <h2 class="section-title"><span class="section-index">06</span> Contact</h2>
         <p class="section-note">Email is the fastest way to reach me.</p>
       </div>
 
-      <a class="contact-mail reveal" href="mailto:febriananda.rachmad@gmail.com">febriananda.rachmad@gmail.com</a>
+      <a class="contact-mail reveal" href="mailto:febrianandarachmad@gmail.com">febrianandarachmad@gmail.com</a>
 
       <div class="contact-grid reveal">
         <a class="contact-link" href="https://github.com/rachmadnanda" target="_blank" rel="noopener">
@@ -568,7 +567,6 @@
 <footer class="site-footer">
   <div class="wrap site-footer__inner">
     <p>© <span data-year>2026</span> Rachmad Febriananda</p>
-    <p>Hand-written HTML &amp; CSS. Set in Inter and JetBrains Mono.</p>
   </div>
 </footer>
 

@@ -26,7 +26,7 @@ Then open <http://localhost:8000>.
 ## Editing content
 
 Everything lives in `index.html`, in reading order: hero, work, experience,
-skills, certifications, contact. Sections are marked with `<!-- -->` free
+organization, skills, certifications, contact. Sections are marked with `<!-- -->` free
 semantic blocks, so search for the heading text (for example `Selected Work`)
 to jump straight to the part you want.
 
