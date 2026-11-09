@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rachmad Febriananda — Informatics Engineering, Polinema</title>
+<meta name="description" content="Applied computer science student at Politeknik Negeri Malang. IoT firmware, machine learning pipelines, and the web applications that put them in front of real users.">
+<meta name="author" content="Rachmad Febriananda">
+<meta name="theme-color" content="#faf9f6">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rachmad Febriananda">
+<meta property="og:description" content="Applied computer science student at Politeknik Negeri Malang. IoT, data science, and full-stack web.">
+<meta property="og:url" content="https://rachmadnanda.github.io/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    root.classList.add('js');
+    try {
+      var stored = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      root.dataset.theme = stored || (prefersDark ? 'dark' : 'light');
+    } catch (e) {
+      root.dataset.theme = 'light';
+    }
+  })();
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" data-header>
+  <div class="wrap site-header__inner">
+    <a class="brand" href="#top" aria-label="Rachmad Febriananda, back to top">
+      <span class="brand__mark" aria-hidden="true">RF</span>
+      <span class="brand__name">Rachmad Febriananda</span>
+    </a>
+
+    <div class="site-nav">
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav-panel">
+        <span>Menu</span>
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <path d="M2 4.5 6 8.5 10 4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <nav id="nav-panel" class="nav" aria-label="Sections" data-nav-panel>
+        <ul>
+          <li><a href="#work" data-nav-link>Work</a></li>
+          <li><a href="#experience" data-nav-link>Experience</a></li>
+          <li><a href="#skills" data-nav-link>Skills</a></li>
+          <li><a href="#certifications" data-nav-link>Certifications</a></li>
+          <li><a href="#contact" data-nav-link>Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme" title="Switch theme">
+        <svg class="icon icon--sun" width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <svg class="icon icon--moon" width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap hero__grid">
+      <div class="hero__intro">
+        <p class="eyebrow">Informatics Engineering · Politeknik Negeri Malang</p>
+        <h1>Rachmad<br>Febriananda</h1>
+        <p class="hero__lede">
+          I study applied computer science in Malang. Most of my work sits where data meets
+          product — firmware that reads sensors, models that make sense of messy data, and the
+          web applications that put both in front of real people.
+        </p>
+        <ul class="hero__links">
+          <li><a href="mailto:febriananda.rachmad@gmail.com">Email</a></li>
+          <li><a href="https://github.com/rachmadnanda" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/rachmadfebriananda/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <dl class="hero__panel">
+        <div>
+          <dt>Currently</dt>
+          <dd>Samsung Innovation Campus Batch 8 — IoT</dd>
+        </div>
+        <div>
+          <dt>Studying</dt>
+          <dd>D4 Computer Science, class of 2028</dd>
+        </div>
+        <div>
+          <dt>Focus</dt>
+          <dd>Data science, machine learning, full-stack</dd>
+        </div>
+        <div>
+          <dt>Based in</dt>
+          <dd>Malang, East Java, Indonesia</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="section-title"><span class="section-index">01</span> Selected Work</h2>
+        <p class="section-note">Five projects, in the order I would talk about them.</p>
+      </div>
+
+      <div class="work-list">
+        <article class="work reveal">
+          <p class="work__index">01</p>
+          <div class="work__body">
+            <h3 class="work__title">
+              <a href="https://github.com/rachmadnanda/StudyCaseStage2" target="_blank" rel="noopener">
+                CO-Zero — car-cabin CO monitor
+                <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M4 10 10 4M10 4H5M10 4v5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </h3>
+            <p class="work__desc">
+              A carbon monoxide detector for private car cabins, built so exposure is caught before
+              it turns dangerous. The ESP32 reads an MQ-2 and a DHT22, smooths the signal with a
+              moving average, and applies hysteresis to the alarm thresholds before driving an OLED
+              and a buzzer. Readings publish over MQTT and land in a live Python dashboard. Ten test
+              scenarios and sixty assertions ship with it.
+            </p>
+            <ul class="tags">
+              <li>ESP32</li><li>MQ-2</li><li>MQTT</li><li>Python</li><li>Plotly</li>
+            </ul>
+          </div>
+          <p class="work__meta"><span>IoT · Firmware</span><span>2026</span></p>
+        </article>
+
+        <article class="work reveal">
+          <p class="work__index">02</p>
+          <div class="work__body">
+            <h3 class="work__title">
+              <a href="https://github.com/rachmadnanda/PBL_INLET_WebProfile" target="_blank" rel="noopener">
+                InLET lab web profile
+                <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M4 10 10 4M10 4H5M10 4v5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </h3>
+            <p class="work__desc">
+              The public profile and content system for the Information and Learning Engineering
+              Technology lab at Polinema, built by a team of four in our third-semester PBL. Native
+              PHP with an MVC structure over PostgreSQL: guestbook, lab loan and visitation records,
+              publication and product counts, student attendance, news, and an admin CMS. I owned the
+              backend and database — most of it the admin panel — plus the CMS front end in Tailwind,
+              and ran QA before handoff.
+            </p>
+            <ul class="tags">
+              <li>PHP</li><li>PostgreSQL</li><li>MVC</li><li>Tailwind CSS</li>
+            </ul>
+          </div>
+          <p class="work__meta"><span>Full-stack · PBL</span><span>2025</span></p>
+        </article>
+
+        <article class="work reveal">
+          <p class="work__index">03</p>
+          <div class="work__body">
+            <h3 class="work__title">Aqua Monitoring — estuary water quality</h3>
+            <p class="work__desc">
+              A water quality prediction app for Coding Camp 2026, built with a full-stack and AI
+              team. I handled the data end to end: collection, assessment, cleaning, imputation, and
+              exploratory analysis. Then feature engineering, training and comparing prediction
+              models for quality classification, and an interactive Streamlit dashboard to present
+              the results.
+            </p>
+            <ul class="tags">
+              <li>Python</li><li>Pandas</li><li>scikit-learn</li><li>Streamlit</li>
+            </ul>
+          </div>
+          <p class="work__meta"><span>Data Science · Team</span><span>2026</span></p>
+        </article>
+
+        <article class="work reveal">
+          <p class="work__index">04</p>
+          <div class="work__body">
+            <h3 class="work__title">Evently — guest and QR check-in</h3>
+            <p class="work__desc">
+              A guest and check-in platform for events. Seven-table PostgreSQL schema with
+              migrations, ENUM types, indexes and an ERD, plus end-to-end check-in using unique
+              tokens, real-time validation, duplicate-scan prevention and audit logging. I also
+              built the three-tier RBAC, the event approval workflow, CRUD for guests, events,
+              templates and scanners, Excel/CSV/PDF reporting, a live attendance dashboard, and a
+              Node.js service for bulk WhatsApp messages.
+            </p>
+            <ul class="tags">
+              <li>PostgreSQL</li><li>Node.js</li><li>RBAC</li><li>QR check-in</li>
+            </ul>
+          </div>
+          <p class="work__meta"><span>Backend · Platform</span><span>2026</span></p>
+        </article>
+
+        <article class="work reveal">
+          <p class="work__index">05</p>
+          <div class="work__body">
+            <h3 class="work__title">
+              <a href="https://github.com/rachmadnanda/GulaSkin" target="_blank" rel="noopener">
+                GulaSkin — daily sugar tracker
+                <svg class="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M4 10 10 4M10 4H5M10 4v5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </h3>
+            <p class="work__desc">
+              A sugar intake tracker that shows what a day of eating adds up to, and what that means
+              for your skin. React and TypeScript on the front end, Gemini for the analysis,
+              containerised with Docker.
+            </p>
+            <ul class="tags">
+              <li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>Gemini API</li>
+            </ul>
+          </div>
+          <p class="work__meta"><span>Web app · Personal</span><span>2026</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="section-title"><span class="section-index">02</span> Experience</h2>
+        <p class="section-note">Programs, teams, and the parts I was actually responsible for.</p>
+      </div>
+
+      <ol class="timeline">
+        <li class="entry reveal">
+          <p class="entry__when">Aug 2026 — Present</p>
+          <div class="entry__body">
+            <h3 class="entry__role">Student Cohort — Internet of Things</h3>
+            <p class="entry__org">Samsung Innovation Campus Batch 8</p>
+            <ul class="entry__points">
+              <li>Building a pollution detection system for private car cabins, aimed at reducing fatalities from toxic exposure.</li>
+              <li>Designing the IoT architecture that connects hardware and software into one pipeline.</li>
+              <li>Using MQTT so sensor data moves with low latency in real time.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="entry reveal">
+          <p class="entry__when">Feb 2026 — Jul 2026</p>
+          <div class="entry__body">
+            <h3 class="entry__role">Student Cohort — Data Science</h3>
+            <p class="entry__org">Coding Camp 2026, DBS Foundation × Dicoding</p>
+            <ul class="entry__points">
+              <li>Owned data preparation end to end: gathering, assessment, cleaning, imputation and exploratory analysis.</li>
+              <li>Engineered features and built predictive models for estuary water quality classification.</li>
+              <li>Delivered interactive Streamlit dashboards for the team's business insights.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="entry reveal">
+          <p class="entry__when">Mar 2026 — Jun 2026</p>
+          <div class="entry__body">
+            <h3 class="entry__role">Backend Developer</h3>
+            <p class="entry__org">Evently — Event Guest &amp; QR Check-In Platform</p>
+            <ul class="entry__points">
+              <li>Designed the PostgreSQL schema and the check-in flow: unique tokens, real-time validation, duplicate-scan prevention, audit logging.</li>
+              <li>Implemented three-tier RBAC, the event approval workflow, and CRUD for guests, events, templates and scanners.</li>
+              <li>Built Excel/CSV/PDF reporting, a live attendance dashboard, and a Node.js microservice for bulk WhatsApp messages.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="entry reveal">
+          <p class="entry__when">Oct 2026 — Present</p>
+          <div class="entry__body">
+            <h3 class="entry__role">Production</h3>
+            <p class="entry__org">Cloud DevFest 2026 — Google Developer Groups Cloud Surabaya</p>
+            <ul class="entry__points">
+              <li>Designed and managed event merchandise, including official tees and event kits.</li>
+              <li>Official event photographer, covering sessions and key moments at the venue.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+
+      <div class="education reveal">
+        <h3 class="subhead">Education</h3>
+        <div class="edu">
+          <p class="entry__when">Aug 2024 — May 2028</p>
+          <div>
+            <h4 class="entry__role">D4 Applied Computer Science</h4>
+            <p class="entry__org">State Polytechnic of Malang — Malang, East Java</p>
+            <p class="edu__gpa">GPA <span>3.70</span> / 4.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="section-title"><span class="section-index">03</span> Skills</h2>
+        <p class="section-note">What I reach for, grouped by where it sits in a project.</p>
+      </div>
+
+      <dl class="skill-list reveal">
+        <div class="skill-row">
+          <dt>Languages</dt>
+          <dd>
+            <ul class="tags tags--boxed">
+              <li>Python</li><li>Java</li><li>C++</li><li>JavaScript</li><li>TypeScript</li><li>PHP</li><li>SQL</li><li>Dart</li>
+            </ul>
+          </dd>
+        </div>
+        <div class="skill-row">
+          <dt>Frameworks</dt>
+          <dd>
+            <ul class="tags tags--boxed">
+              <li>Laravel</li><li>Node.js</li><li>React</li><li>Tailwind CSS</li><li>Streamlit</li><li>FastAPI</li><li>Flutter</li>
+            </ul>
+          </dd>
+        </div>
+        <div class="skill-row">
+          <dt>Data &amp; ML</dt>
+          <dd>
+            <ul class="tags tags--boxed">
+              <li>Pandas</li><li>NumPy</li><li>scikit-learn</li><li>TensorFlow</li><li>Matplotlib</li><li>Tableau</li><li>PostgreSQL</li>
+            </ul>
+          </dd>
+        </div>
+        <div class="skill-row">
+          <dt>Tools</dt>
+          <dd>
+            <ul class="tags tags--boxed">
+              <li>Git</li><li>Docker</li><li>Linux</li><li>VS Code</li><li>Colab</li><li>Kaggle</li><li>Figma</li><li>Arduino IDE</li><li>Android Studio</li>
+            </ul>
+          </dd>
+        </div>
+        <div class="skill-row">
+          <dt>Spoken</dt>
+          <dd>
+            <ul class="tags tags--boxed">
+              <li>Indonesian — native</li><li>English — professional</li><li>Japanese — elementary</li><li>Chinese — elementary</li>
+            </ul>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" id="certifications">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="section-title"><span class="section-index">04</span> Certifications</h2>
+        <p class="section-note">47 courses across nine issuers. Grouped, not scattered — open a row for the full list.</p>
+      </div>
+
+      <div class="certs">
+        <details class="cert reveal">
+          <summary>
+            <span class="cert__issuer">IBM</span>
+            <span class="cert__desc">AI agents, Granite, Tableau, data foundations</span>
+            <span class="cert__count">10</span>
+            <svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2 4.5 6 8.5 10 4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </summary>
+          <ul class="cert__list">
+            <li>AI Agent for Data Analysis — IBM SkillsBuild / Hacktiv8 <span>Jul 2026</span></li>
+            <li>Unleashing the Power of AI Agents</li>
+            <li>Classifying Data Using IBM Granite</li>
+            <li>Getting Started with Data</li>
+            <li>Introduction to Tableau Desktop</li>
+            <li>Data Science Landscape</li>
+            <li>Introduction to Data Concepts</li>
+            <li>Introduction to Generative AI</li>
+            <li>AI Ethics</li>
+            <li>Introduction to Artificial Intelligence</li>
+          </ul>
+        </details>
+
+        <details class="cert reveal">
+          <summary>
+            <span class="cert__issuer">Dicoding</span>
+            <span class="cert__desc">Data science, machine learning, cloud, Python</span>
+            <span class="cert__count">16</span>
+            <svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2 4.5 6 8.5 10 4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </summary>
+          <ul class="cert__list">
+            <li>Learn Cloud Basics and Gen AI on AWS <span>Jun 2026</span></li>
+            <li>Spec-Driven Development with Kiro <span>Jun 2026</span></li>
+            <li>Learn Data Science Applications with Microsoft Fabric <span>Jun 2026</span></li>
+            <li>Learning Mathematics for Data Science <span>Jun 2026</span></li>
+            <li>Learn Data Processing Fundamentals <span>May 2026</span></li>
+            <li>Learn the Fundamentals of Data Analysis <span>Apr 2026</span></li>
+            <li>Learn Machine Learning for Beginners <span>Apr 2026</span></li>
+            <li>Learn Basic Structured Query Language (SQL) <span>Mar 2026</span></li>
+            <li>Getting Started with Programming with Python <span>Mar 2026</span></li>
+            <li>Learn Data Visualization Fundamentals <span>Feb 2026</span></li>
+            <li>Learn Data Science Fundamentals <span>Feb 2026</span></li>
+            <li>Learn Git Basics with GitHub <span>Feb 2026</span></li>
+            <li>Introduction to Programming Logic <span>Feb 2026</span></li>
+            <li>Getting Started with Programming Basics <span>Feb 2026</span></li>
+            <li>Learn AI Fundamentals <span>Jan 2026</span></li>
+            <li>Introduction to Financial Literacy <span>Jan 2026</span></li>
+          </ul>
+        </details>
+
+        <details class="cert reveal">
+          <summary>
+            <span class="cert__issuer">Anthropic</span>
+            <span class="cert__desc">Model Context Protocol, agents, AI fluency</span>
+            <span class="cert__count">08</span>
+            <svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2 4.5 6 8.5 10 4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </summary>
+          <ul class="cert__list">
+            <li>Model Context Protocol: Advanced Topics <span>Jul 2026</span></li>
+            <li>Introduction to Model Context Protocol</li>
+            <li>Introduction to Subagents</li>
+            <li>Introduction to Agent Skills</li>
+            <li>AI Fluency for Builders</li>
+            <li>AI Fluency for Small Businesses</li>
+            <li>AI Fluency for Nonprofits</li>
+            <li>AI Fluency: Framework &amp; Foundations</li>
+          </ul>
+        </details>
+
+        <details class="cert reveal">
+          <summary>
+            <span class="cert__issuer">Amazon Web Services</span>
+            <span class="cert__desc">Machine learning, generative AI, security</span>
+            <span class="cert__count">07</span>
+            <svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2 4.5 6 8.5 10 4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </summary>
+          <ul class="cert__list">
+            <li>Machine Learning Terminology and Process <span>Jul 2026</span></li>
+            <li>Planning a Generative AI Project</li>
+            <li>Planning a Machine Learning Project</li>
+            <li>Cybersecurity Implementation for State-Owned Enterprises</li>
+            <li>Data Security for the Public Sector</li>
+            <li>Foundations of Prompt Engineering <span>Jun 2026</span></li>
+            <li>Essentials of Prompt Engineering</li>
+          </ul>
+        </details>
+
+        <details class="cert reveal">
+          <summary>
+            <span class="cert__issuer">AMD</span>
+            <span class="cert__desc">Quantization and AI agents</span>
+            <span class="cert__count">02</span>
+            <svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2 4.5 6 8.5 10 4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </summary>
+          <ul class="cert__list">
+            <li>Introduction to Quantization <span>Jul 2026</span></li>
+            <li>Introduction to AI Agents</li>
+          </ul>
+        </details>
+
+        <details class="cert reveal">
+          <summary>
+            <span class="cert__issuer">Google for Education</span>
+            <span class="cert__desc">Gemini Certified University Student</span>
+            <span class="cert__count">01</span>
+            <svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2 4.5 6 8.5 10 4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </summary>
+          <ul class="cert__list">
+            <li>Gemini Certified University Student <span>Jul 2026 — Jul 2029</span></li>
+          </ul>
+        </details>
+
+        <details class="cert reveal">
+          <summary>
+            <span class="cert__issuer">DBS Foundation</span>
+            <span class="cert__desc">Coding Camp 2026 — Data Scientist</span>
+            <span class="cert__count">01</span>
+            <svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2 4.5 6 8.5 10 4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </summary>
+          <ul class="cert__list">
+            <li>Coding Camp 2026 — Certificate of Completion <span>Jul 2026</span></li>
+          </ul>
+        </details>
+
+        <details class="cert reveal">
+          <summary>
+            <span class="cert__issuer">GDG Indonesia</span>
+            <span class="cert__desc">#JuaraVibeCoding</span>
+            <span class="cert__count">01</span>
+            <svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2 4.5 6 8.5 10 4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </summary>
+          <ul class="cert__list">
+            <li>#JuaraVibeCoding <span>May 2026</span></li>
+          </ul>
+        </details>
+
+        <details class="cert reveal">
+          <summary>
+            <span class="cert__issuer">Universitas Brawijaya</span>
+            <span class="cert__desc">Brawijaya Data Analyst Bootcamp</span>
+            <span class="cert__count">01</span>
+            <svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2 4.5 6 8.5 10 4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </summary>
+          <ul class="cert__list">
+            <li>Brawijaya Data Analyst Bootcamp <span>Oct 2024</span></li>
+          </ul>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--contact" id="contact">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 class="section-title"><span class="section-index">05</span> Contact</h2>
+        <p class="section-note">Email is the fastest way to reach me.</p>
+      </div>
+
+      <a class="contact-mail reveal" href="mailto:febriananda.rachmad@gmail.com">febriananda.rachmad@gmail.com</a>
+
+      <div class="contact-grid reveal">
+        <a class="contact-link" href="https://github.com/rachmadnanda" target="_blank" rel="noopener">
+          <span class="contact-link__label">GitHub</span>
+          <span class="contact-link__value">github.com/rachmadnanda</span>
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/rachmadfebriananda/" target="_blank" rel="noopener">
+          <span class="contact-link__label">LinkedIn</span>
+          <span class="contact-link__value">in/rachmadfebriananda</span>
+        </a>
+        <div class="contact-link contact-link--static">
+          <span class="contact-link__label">Location</span>
+          <span class="contact-link__value">Malang, East Java</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <p>© <span data-year>2026</span> Rachmad Febriananda</p>
+    <p>Hand-written HTML &amp; CSS. Set in Inter and JetBrains Mono.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
