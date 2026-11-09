@@ -11,6 +11,7 @@ index.html              all content
 assets/css/style.css    styles, including light and dark themes
 assets/js/main.js       theme toggle, mobile nav, scroll reveal, active section
 assets/img/favicon.svg  favicon
+assets/img/portrait.jpg hero portrait (square crop of assets/img/nandaa.jpeg)
 ```
 
 ## Run locally
